@@ -1,2 +1,8 @@
 testando.txt
-.teste-de-ignorar/
+pasta-para-ignorar/
+
+
+
+
+o git ignore só funciona para arquivos que nunca tenham ido pra nuvem, se ele já recebeu push uma única vez não é mais possível ignorá-lo,
+a não ser que exclua o arquivo do repositório e dê o push novamente com o git ignore habilitado.
