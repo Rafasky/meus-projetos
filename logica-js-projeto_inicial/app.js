@@ -1,10 +1,11 @@
 alert('Boas vindas ao jogo do número secreto');
-let numeroSecreto = parseInt(Math.random() *1000 + 1);
-let chute
-let tentativas = 0
+const numeroMax = 1000;
+let numeroSecreto = parseInt(Math.random() * numeroMax + 1);
+let chute;
+let tentativas = 0;
 
 while (chute != numeroSecreto) {
-    chute = prompt('Escolha um número entre 1 e 1000. Tentativas: ' + tentativas);
+    chute = prompt(`Escolha um número entre 1 e ${numeroMax}. Tentativas: ${tentativas}`);
     tentativas++
     let quantasTentativas = tentativas > 1 ? 'tentativas' : 'tentativa';
 
